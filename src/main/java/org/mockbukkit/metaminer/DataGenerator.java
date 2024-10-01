@@ -1,8 +1,12 @@
 package org.mockbukkit.metaminer;
 
+import com.google.gson.JsonObject;
+
 import java.io.IOException;
 
 public interface DataGenerator
 {
-	void generateData() throws IOException;
+	JsonObject generateData() throws IOException;
+
+	String getFileName();
 }
